@@ -29,10 +29,10 @@ def Identification_(message: Message):
             )
             rankbt = convertRank2Ar(Get_rank(chat_id, iddd.id))
 
-            xt = f"""﹃
-≭︰رتبته في البوت ↫ ❲ {rankbt} ❳ 
-≭︰رتبته في الگروب ↫ ❲ {rankgr} ❳
-﹄"""
+            xt = f"""<b>
+↯︙رتبته في البوت ↫ ❲ {rankbt} ❳ 
+↯︙رتبته في الگروب ↫ ❲ {rankgr} ❳
+<b>"""
             bot.send_message(chat_id, xt, reply_to_message_id=message.id)
 
         else:
@@ -56,10 +56,10 @@ def Identification_(message: Message):
                 else:
                     stategr = "غير معروف"
 
-            xt = f"""﹃
-≭︰لقبه في البوت ↫ ❲ {statebt} ❳ 
-≭︰لقبه في الگروب ↫ ❲ {stategr} ❳
-﹄
+            xt = f"""<b>
+↯︙لقبه في البوت ↫ ❲ {statebt} ❳ 
+↯︙لقبه في الگروب ↫ ❲ {stategr} ❳
+<b>
 """
 
             bot.send_message(chat_id, xt, reply_to_message_id=message.id)
@@ -95,17 +95,17 @@ def Identification_(message: Message):
 
             if not (bot.get_me().id == iddd.id):
                 nm = """
-    ≭︰اسمه ↫ ❲ {name} ❳
-    ≭︰ايديه ↫❲ {user_id} ❳
-    ≭︰معرفه ↫ ❲ {username} ❳
-    ≭︰رتبه البوت ↫ ❲ {rank_bot} ❳
-    ≭︰رتبه الكروب ↫ ❲ {rank_group} ❳
-    ≭︰رسائله ↫ ❲ {msgs} ❳
-    ≭︰نقاطه ↫ ❲ {points} ❳
-    ≭︰تعديلاته ↫ ❲ {edit} ❳
-    ≭︰جهاته ↫ ❲ {directions} ❳
-    ≭︰قيوده ↫ ❲ {restrictions} ❳
-    ≭︰لقبه ↫ ❲ {nickname}❳
+    ↯︙اسمه ↫ ❲ {name} ❳
+    ↯︙ايديه ↫❲ {user_id} ❳
+    ↯︙معرفه ↫ ❲ {username} ❳
+    ↯︙رتبه البوت ↫ ❲ {rank_bot} ❳
+    ↯︙رتبه الكروب ↫ ❲ {rank_group} ❳
+    ↯︙رسائله ↫ ❲ {msgs} ❳
+    ↯︙نقاطه ↫ ❲ {points} ❳
+    ↯︙تعديلاته ↫ ❲ {edit} ❳
+    ↯︙جهاته ↫ ❲ {directions} ❳
+    ↯︙قيوده ↫ ❲ {restrictions} ❳
+    ↯︙لقبه ↫ ❲ {nickname}❳
     `
                 """.format(
                     name=name,
@@ -140,10 +140,10 @@ def Identification_(message: Message):
         rankbt = convertRank2Ar(Get_rank(chat_id, iddd.id))
         rankgr = "عضو" if bot.get_chat_member(chat_id, user_.id).is_member else "مشرف"
 
-        xt = f"""﹃
-≭︰رتبتك في البوت ↫ ❲ {rankbt} ❳ 
-≭︰رتبتك في الگروب ↫ ❲ {rankgr} ❳
-        ﹄"""
+        xt = f"""<b>
+↯︙رتبتك في البوت ↫ ❲ {rankbt} ❳ 
+↯︙رتبتك في الگروب ↫ ❲ {rankgr} ❳
+        <b>"""
         bot.send_message(chat_id, xt, reply_to_message_id=message.id)
 
     if msg_text == "لقبي" and Compulsory_subscription(message) and check_group(chat_id):
@@ -157,11 +157,10 @@ def Identification_(message: Message):
             else:
                 stategr = "غير معروف"
 
-        xt = f"""                       ﹃
-    
-≭︰لقبك في البوت ↫ ❲ {statebt} ❳ 
-≭︰لقبك في الگروب ↫ ❲ {stategr} ❳
-﹄
+        xt = f""" <b>
+↯︙لقبك في البوت ↫ ❲ {statebt} ❳ 
+↯︙لقبك في الگروب ↫ ❲ {stategr} ❳
+<b>
 """
 
         bot.send_message(chat_id, xt, reply_to_message_id=message.id)
@@ -260,10 +259,8 @@ def Identification_(message: Message):
             return mrk
 
         Photo_user = f"https://t.me/{chan_inf.username}"
-        ttttxt = f"""𝐒𝐎𝐔𝐑𝐂𝐄 {chan_inf.title if chan_inf.title else chan_inf.first_name} ❍ 
-
-˹ 𐇮 𝑴𝑶𝑫𝒀 𖠮🚸𖠮 آلـۘهہؚيـٰـ‌ُـُ໋۠بـ໋ۘ۠ه 𐇮
-~"""
+        ttttxt = f"""𝘛𝘏𝘌 𝘉𝘌𝘚𝘛 𝘚𝘖𝘜𝘙𝘊𝘌 𝘖𝘕 𝘛𝘌𝘓𝘌𝘎𝘙𝘈𝘔
+"""
         try:
             bot.send_photo(
                 chat_id,
@@ -367,11 +364,11 @@ def Identification_(message: Message):
             txt = """#description
 
 •❃  الاســم  › #name
-•❃  الايـدي  › #id
-•❃  المـعـرف › #username
-•❃ الرسـائـل › #msgs
-•❃ السحـگـات › #shgs
- •❃  الرتبـــه  ⇦ .「   #rank 𓅫  」. 
+↯︙ الايـدي  › #id
+↯︙ المـعـرف › #username
+↯︙الرسـائـل › #msgs
+↯︙السحـگـات › #shgs
+ ↯︙ الرتبـــه  ⇦ .「   #rank 𓅫  」. 
             """
             Full_clich = IdetId(txt)
 
@@ -428,12 +425,12 @@ def Identification_(message: Message):
             "banned",
         ]:
             repls = ShowAllRep_Group(message.chat.id)
-            ttxt = "✯︙ هذه الردود  الخاصة بالمجموعة"
+            ttxt = "↯︙هذه الردود  الخاصة بالمجموعة"
             a = 1
             for rep in repls.values():
                 n = rep["name"]
                 t = rep["type"]
-                ttxt += f"✯ {a} ✯︙ ( {n} )  - ( {t} )"
+                ttxt += f"✯ {a} ↯︙( {n} )  - ( {t} )"
                 a += 1
 
             bot.send_message(chat_id, ttxt, reply_to_message_id=message.id)
@@ -576,7 +573,7 @@ def Identification_(message: Message):
                 else "ماكو"
             )
             TW = f"<pre> {TW} </pre>"
-            ttxt = f"✯︙ االتوحيد: انقر لنسخة: {TW}"
+            ttxt = f"↯︙االتوحيد: انقر لنسخة: {TW}"
 
             bot.send_message(
                 chat_id, ttxt, reply_to_message_id=message.id, parse_mode="HTML"
